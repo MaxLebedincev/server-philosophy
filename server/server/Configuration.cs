@@ -6,13 +6,24 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace PhilosophyProject
+namespace PhilosophyServer
 {
     class Configuration
     {
         public static string RealPath { get; set; }
         public static string PathFront { get; set; }
+        public static string NameDB { get; set; }
+        public static string UserNameDB { get; set; }
+        public static string UserPasswordDB { get; set; }
+        public static string ServerNameDB { get; set; }
+
         public string _pathFront { get; set; }
+
+        public string _nameDB { get; set; }
+        public string _userNameDB { get; set; }
+        public string _userPasswordDB { get; set; }
+        public string _serverNameDB { get; set; }
+
     }
 
     class Config
@@ -27,6 +38,10 @@ namespace PhilosophyProject
             Configuration config = JsonConvert.DeserializeObject<Configuration>(json);
 
             Configuration.PathFront = config._pathFront;
+            Configuration.UserNameDB = config._userNameDB;
+            Configuration.UserPasswordDB = config._userPasswordDB;
+            Configuration.ServerNameDB = config._serverNameDB;
+            Configuration.NameDB = config._nameDB;
         }
 
         private string ReadFile(string pathConfig)
@@ -54,6 +69,6 @@ namespace PhilosophyProject
 
             return answer;
         }
-       
+
     }
 }

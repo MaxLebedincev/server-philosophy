@@ -4,7 +4,7 @@ using System.Text;
 using System.Net.Sockets;
 using System.Text.RegularExpressions;
 
-namespace PhilosophyProject
+namespace PhilosophyServer
 {
     class Client
     {

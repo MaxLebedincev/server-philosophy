@@ -1,3 +1,7 @@
 {
-	'_pathFront': '/TestFront'
+	'_pathFront': '/TestFront',
+	'_nameDB': 'PhilosophyDB',
+	'_userNameDB': 'User',
+	'_userPasswordDB': 'User_dev',
+	'_serverNameDB': 'WIN-29CV8NN4D7M\\SQLEXPRESS'
 }
