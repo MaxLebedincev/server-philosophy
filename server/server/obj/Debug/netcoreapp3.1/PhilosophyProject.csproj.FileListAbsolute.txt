@@ -1,0 +1,15 @@
+E:\Проги (C#)\server-philosophy\server\server\bin\Debug\netcoreapp3.1\PhilosophyProject.exe
+E:\Проги (C#)\server-philosophy\server\server\bin\Debug\netcoreapp3.1\PhilosophyProject.deps.json
+E:\Проги (C#)\server-philosophy\server\server\bin\Debug\netcoreapp3.1\PhilosophyProject.runtimeconfig.json
+E:\Проги (C#)\server-philosophy\server\server\bin\Debug\netcoreapp3.1\PhilosophyProject.runtimeconfig.dev.json
+E:\Проги (C#)\server-philosophy\server\server\bin\Debug\netcoreapp3.1\PhilosophyProject.dll
+E:\Проги (C#)\server-philosophy\server\server\bin\Debug\netcoreapp3.1\PhilosophyProject.pdb
+E:\Проги (C#)\server-philosophy\server\server\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.AssemblyInfoInputs.cache
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.AssemblyInfo.cs
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.csproj.CoreCompileInputs.cache
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.csproj.CopyComplete
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.dll
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.pdb
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.genruntimeconfig.cache
+E:\Проги (C#)\server-philosophy\server\server\obj\Debug\netcoreapp3.1\PhilosophyProject.csprojAssemblyReference.cache

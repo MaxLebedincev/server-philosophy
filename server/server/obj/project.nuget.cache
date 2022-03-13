@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GOj5BF9Pu7JYq+1x3tkvevmvteX3WamdZ/oLzd+jLIbk9ADvPVm8NFMTdcB+2HRCyqD5M+7F+/5+ACuKrzC3tA==",
+  "success": true,
+  "projectFilePath": "E:\\Проги (C#)\\server-philosophy\\server\\server\\PhilosophyProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
