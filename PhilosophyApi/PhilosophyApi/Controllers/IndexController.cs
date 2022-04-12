@@ -31,41 +31,35 @@ namespace PhilosophyApi.Controllers
         public class RequestData
         {
             public string type { get; set; }
-            public int[] checkID { get; set; }
+            //public int[] checkID { get; set; }
         }
 
-        public PhilosophyDBModel SQLQuery(RequestData data)
+        public List<PhilosophyDBModel> SQLQuery(RequestData data)
         {
             sqlCon.Open();
-
-            DataTable tempTable = new DataTable();
-            tempTable.Columns.Add(new DataColumn("ID", typeof(int)));
-
-            foreach (var id in data.checkID)
-                tempTable.Rows.Add(id);
-
-            SqlCommand command = new SqlCommand("dbo.SPNewStr", sqlCon);
-            command.CommandType = CommandType.StoredProcedure;
-
-            SqlParameter tempTableParams = command.Parameters.AddWithValue("@ids", tempTable);
-
-            tempTableParams.SqlDbType = SqlDbType.Structured;
-            tempTableParams.TypeName = "dbo.IDList";
+           
+            SqlCommand command = new SqlCommand("SELECT * FROM PhilosophyDB WHERE type = @type", sqlCon);
 
             command.Parameters.AddWithValue("@type", data.type);
 
+            List<PhilosophyDBModel> listM = new List<PhilosophyDBModel>();
 
-            PhilosophyDBModel answer = new PhilosophyDBModel(command.ExecuteReader());
+            var reader = command.ExecuteReader();
+
+            while(reader.Read())
+            {
+                listM.Add(new PhilosophyDBModel(reader));
+            }
 
             sqlCon.Close();
- 
-            return answer;
+
+            return listM;
         }
 
         [HttpPost]
         public JsonResult PostTodoItem(RequestData data)
         {
-            PhilosophyDBModel answer = null;
+            List<PhilosophyDBModel> answer = null;
 
             try
             {
